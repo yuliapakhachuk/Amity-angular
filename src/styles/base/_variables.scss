@@ -1,7 +1,43 @@
+:root {
 // --colors--
 
-:root {
-    // COLORS
+    --primary-400-color: #F06864;
+    --primary-300-color: #F17773;
+    --primary-200-color: #F38683;
+    --primary-100-color: #F49592;
+    --secondary-400-color: #0C57A9;
+    --secondary-300-color: #0564A2;
+    --secondary-200-color: #207EED;
+    --secondary-100-color: #1AA7FF;
+    --success-400-color: #0A6500;
+    --success-300-color: #0E7900;
+    --success-200-color: #11A200;
+    --success-100-color: #5BFE47;
+    --error-400-color: #3C0400;
+    --error-300-color: #A20E00;
+    --error-200-color: #FF4D3D;
+    --error-100-color: #FE685B;
+    --warning-400-color: #C98702;
+    --warning-300-color: #F0A104;
+    --warning-200-color: #FCB627;
+    --warning-100-color: #FEEDBF;
+    --dark-color: #0E0E2C;
+    --body-text-color: #4A4A68;
+    --light-300-color: #818E9C;
+    --light-200-color: #818E9C;
+    --disable-color: #9F9F9F;
+    --light-100-color: #F4F5F7;
+    --grey-100-color: #E6E6E6;
+    --white-color: #FFFFFF;
+    --primary-10-color: #FDEAE9;
 
+// --font-sizes--
 
+    --h1-font-size: 34px;
+    --h2-font-size: 24px;
+    --h3-font-size: 22px;
+    --subtitle-font-size: 20px;
+    --body-big-font-size: 18px;
+    --body-font-size: 16px;
+    --body-details-font-size: 14px;
 }
