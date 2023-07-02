@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "user-avatar.component.scss"
+    ],
+    "names": [],
+    "file": "user-avatar.component.css"
+}
