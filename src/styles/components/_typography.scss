@@ -12,7 +12,7 @@
 
 @mixin title-h2-bold($color) {
     color: $color;
-    font-size: --h2-font-size;
+    font-size: var(--h2-font-size);
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.48px;
@@ -20,7 +20,7 @@
 
 @mixin title-h2-medium($color) {
     color: $color;
-    font-size: --h2-font-size;
+    font-size: var(--h2-font-size);
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.48px;
@@ -28,7 +28,7 @@
 
 @mixin title-h3-bold($color) {
     color: $color;
-    font-size: --h3-font-size;
+    font-size: var(--h3-font-size);
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.44px;
@@ -36,7 +36,7 @@
 
 @mixin subtitle-big-copy($color) {
     color: $color;
-    font-size: --subtitle-font-size;
+    font-size: var(--subtitle-font-size);
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.4px;
@@ -44,7 +44,7 @@
 
 @mixin uppercase-medium($color) {
     color: $color;
-    font-size: --body-big-font-size;
+    font-size: var(--body-big-font-size);
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.36px;
@@ -53,80 +53,80 @@
 
 @mixin body-big-bold($color) {
     color: $color;
-    font-size: --body-big-font-size;
+    font-size: var(--body-big-font-size);
     font-weight: 700;
 }
 
 @mixin body-big-medium($color) {
     color: $color;
-    font-size: --body-big-font-size;
+    font-size: var(--body-big-font-size);
     font-weight: 500;
 }
 
 @mixin body-big-regular($color) {
     color: $color;
-    font-size: --body-big-font-size;
+    font-size: var(--body-big-font-size);
     font-weight: 400;
     line-height: 140%;
 }
 
 @mixin body-bold($color) {
     color: $color;
-    font-size: --body-font-size;
+    font-size: var(--body-font-size);
     font-weight: 700;
 }
 
 @mixin body-medium($color) {
     color: $color;
-    font-size: --body-font-size;
+    font-size: var(--body-font-size);
     font-weight: 500;
 }
 
 @mixin body-regular($color) {
     color: $color;
-    font-size: --body-font-size;
+    font-size: var(--body-font-size);
     font-weight: 400;
     line-height: 140%;
 }
 
 @mixin body-details-semibold($color) {
     color: $color;
-    font-size: --body-details-font-size;
+    font-size: var(--body-details-font-size);
     font-weight: 600;
     letter-spacing: 0.42px;
 }
 
 @mixin body-details-medium($color) {
     color: $color;
-    font-size: --body-details-font-size;
+    font-size: var(--body-details-font-size);
     font-weight: 500;
     letter-spacing: 0.42px;
 }
 
 @mixin body-details-regular($color) {
     color: $color;
-    font-size: --body-details-font-size;
+    font-size: var(--body-details-font-size);
     font-weight: 400;
     letter-spacing: 0.42px;
 }
 
 @mixin button-L($color) {
     color: $color;
-    font-size: --body-big-font-size;
+    font-size: var(--body-big-font-size);
     font-weight: 500;
     letter-spacing: 0.54px;
 }
 
 @mixin button-MS($color) {
     color: $color;
-    font-size: --body-font-size;
+    font-size: var(--body-font-size);
     font-weight: 500;
     letter-spacing: 0.48px;
 }
 
 @mixin button-XS($color) {
     color: $color;
-    font-size: --body-details-font-size;
+    font-size: var(--body-details-font-size);
     font-weight: 500;
     letter-spacing: 0.42px;
 }
