@@ -1,0 +1,17 @@
+.user-avatar{
+    &_image-picture {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+
+        margin-right: 8px;
+
+        &__photo{
+            min-height: 100%;
+        }
+    }
+
+    
+}
