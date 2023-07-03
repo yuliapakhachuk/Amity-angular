@@ -1,17 +1,39 @@
-.user-avatar{
+@import "../../styles/components/typography";
+
+.user-avatar {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+
     &_image-picture {
         width: 32px;
         height: 32px;
         border-radius: 50%;
+
         object-fit: cover;
         overflow: hidden;
 
         margin-right: 8px;
 
-        &__photo{
-            min-height: 100%;
+        outline: 1px solid rgb(144, 144, 144);
+
+        &__photo {
+            height: 100%;
         }
     }
 
-    
+    &_name {
+        @include body-details-semibold(var(--dark-color));
+    }
+
+    &_role {
+        @include body-details-regular(var(--body-text-color));
+    &::after{
+        content: "e90f";
+        font-family: 'icomoon';
+        font-size: 1em;
+    }
+    }
 }
