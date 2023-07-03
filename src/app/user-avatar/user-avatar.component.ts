@@ -8,13 +8,19 @@ import { User } from 'src/models/user';
 })
 export class UserAvatarComponent implements OnInit{
   user: User = {
-    name: "Jhon Smith",
-    role: "Super Admin",
+    firstName: "Ayeni",
+    lastName: "Olohije",
+    role: "Amity Administrator",
     email: "test@gmail.com",
-    avatarUrl: "../../assets/images/user-icon.jpg"
+    phone: "+1 999 399 299",
+    avatarUrl: ""
   }
+
+  isAvatarPhotoDownloaded!: boolean;
 
   constructor() {}
 
-  ngOnInit(): void {  }
+  ngOnInit(): void { 
+    this.isAvatarPhotoDownloaded = this.user.avatarUrl === "" 
+  }
 }

@@ -1,11 +1,22 @@
 @import "../../styles/components/typography";
 
 .user-avatar {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 8px;
+    width: 248px;
 
     display: flex;
     align-items: center;
+
+    &::after{
+        content: "\e90f";
+        font-family: 'icomoon';
+        font-size: 1em;
+        color: var(--primary-400-color);
+        display: block;
+
+        margin-left: auto;
+    }
+
 
     &_image-picture {
         width: 32px;
@@ -16,8 +27,6 @@
         overflow: hidden;
 
         margin-right: 8px;
-
-        outline: 1px solid rgb(144, 144, 144);
 
         &__photo {
             height: 100%;
@@ -30,10 +39,16 @@
 
     &_role {
         @include body-details-regular(var(--body-text-color));
-    &::after{
-        content: "e90f";
-        font-family: 'icomoon';
-        font-size: 1em;
     }
-    }
+}
+
+.emptyPhoto{
+    background: var(--light-100-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--light-300-color);
+    font-size: 16px;
+    font-weight: 700;
 }
