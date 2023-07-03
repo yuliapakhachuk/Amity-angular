@@ -1,1 +1,15 @@
-<p>user-avatar works!</p>
+<div class="user-avatar">
+    <div class="user-avatar_image-picture" 
+    [ngClass]="{emptyPhoto: isAvatarPhotoDownloaded}"
+
+    >
+        <img *ngIf="user.avatarUrl" class="" [src]="user.avatarUrl" alt="name">
+        <span *ngIf="!user.avatarUrl">{{ user.firstName[0] | uppercase }}</span>
+    </div>
+    <p class="user-avatar_name">
+        {{ user.firstName + " " + user.lastName}}
+        <br>
+        <span class="user-avatar_role">{{ user.role }}</span>
+    </p>
+</div>
+
