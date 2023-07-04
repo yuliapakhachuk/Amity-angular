@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/models/user';
+import { User } from '../../models/user';
 
 @Component({
   selector: 'app-user-avatar',
@@ -17,10 +17,14 @@ export class UserAvatarComponent implements OnInit{
   }
 
   isAvatarPhotoDownloaded!: boolean;
+  showMore: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void { 
     this.isAvatarPhotoDownloaded = this.user.avatarUrl === "" 
+  }
+  toogleShowMore(){
+    this.showMore = !this.showMore;
   }
 }
