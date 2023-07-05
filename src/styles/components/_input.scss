@@ -1,0 +1,22 @@
+.input {
+    display: flex;
+    width: 358px;
+    padding: 13px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--light-300-color);
+
+    &:focus {
+        border-color: var(--secondary-200-color);
+    }
+
+    &_invalid {
+        border-color: var(--error-300-color);
+    }
+
+    &_valid {
+        border-color: var(--success-300-color);
+    }
+}
