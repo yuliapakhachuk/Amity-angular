@@ -1,7 +1,7 @@
 @import "../../styles/components/typography";
 
 .user-avatar {
-    padding: 16px 8px;
+    padding: 12px 8px 12px;
     width: 248px;
 
     &_short-info {
@@ -34,9 +34,7 @@
 
     &_show-more-btn {
         margin-left: auto;
-        // &:hover, &:focus{
-        //     transform: rotate(0deg) translateY(2px);
-        // }
+        transform: rotate(180deg);
 
         &::after{
             content: "\e90f";
@@ -89,18 +87,13 @@
 
 .fullInformation {
     position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    background-color: #ffffff;
 
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .closeBtn{
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
-
-// .wrapper {
-//     // position: absolute;
-//     // top: 100%;
-//     // left: 0;
-//     // right: 0;
-
-// }
