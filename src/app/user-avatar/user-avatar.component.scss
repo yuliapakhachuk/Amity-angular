@@ -1,7 +1,7 @@
 @import "../../styles/components/typography";
 
 .user-avatar {
-    padding: 16px 8px;
+    padding: 12px 8px 12px;
     width: 248px;
 
     &_short-info {
@@ -88,6 +88,7 @@
 .fullInformation {
     position: absolute;
     top: 0;
+    transform: translateX(-100%);
     background-color: #ffffff;
 
     border-radius: 4px;
