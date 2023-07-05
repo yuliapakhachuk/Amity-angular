@@ -37,6 +37,10 @@
                     padding: 20px 8px;
                     position: relative;
 
+                    &:active {
+                        color: var(--dark-color);
+                    }
+
                     &:active::after {
                         content: "";
                         
