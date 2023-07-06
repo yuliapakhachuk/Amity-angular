@@ -1,6 +1,6 @@
 @import '/src/styles/components/typography';
 
-.sign-in-form{
+.form{
     display: flex;
     width: 408px;
     flex-direction: column;
@@ -30,12 +30,12 @@
             gap: 24px;
             align-self: stretch;   
 
-            
-            label {
-                @include body-details-regular(var(--body-text-color));
-                margin-bottom: 8px;
-                display:flex;
-                flex-direction:column;
+            &__control {
+                width: 100%;
+                
+                input {
+                    width: 100%;
+                }
             }
         }
     }
