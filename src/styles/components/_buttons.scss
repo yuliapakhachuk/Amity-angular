@@ -50,12 +50,13 @@
     color: var(--white-color);
 
     &:hover {
-        border-radius: 4px;
         background: var(--primary-300-color);
         box-shadow: 0px 5px 5px -3px rgba(127, 143, 164, 0.20), 0px 3px 14px 2px rgba(127, 143, 164, 0.12);
     }
     &:disabled {
         background: var(--disable-color);
+        box-shadow: none;
+        cursor: not-allowed;
     }
 }
 
@@ -72,6 +73,8 @@
     }
     &:disabled {
         background: var(--disable-color);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+        cursor: not-allowed;
     }
 }
 
@@ -88,6 +91,8 @@
     &:disabled {
         color: var(--disable-color);
         border: var(--disable-color);
+        box-shadow: none;
+        cursor: not-allowed;
     }
 }
 
@@ -101,6 +106,8 @@
     }
     &:disabled {
         background: var(--disable-color);
+        border: none;
+        cursor: not-allowed;
     }
 }
 
@@ -114,6 +121,8 @@
     }
     &:disabled {
         color: var(--light-200-color);
+        text-decoration-line: none;
+        cursor: not-allowed;
     }
 }
 

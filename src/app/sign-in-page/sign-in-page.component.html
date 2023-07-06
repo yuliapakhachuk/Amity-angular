@@ -1,24 +1,35 @@
-<form class="sign-in-form" [formGroup]="form" (ngSubmit)="signIn()">
-    <h1 class="sign-in-form_title">Sign In</h1>
+<form class="form" [formGroup]="form" (ngSubmit)="signIn()">
+    <h1 class="form_title">Sign In</h1>
 
-    <div class="sign-in-form_content">
-        <div class="sign-in-form_content_inputs">
-            <div>
-                <label>Email</label>
-                <input class="input" type="email" formControlName="email">
+    <div class="form_content">
+        <div class="form_content_inputs">
+
+            <div class="form_content_inputs__control">
+                <label class="input_label"
+                       [ngClass]="form.get('email')?.touched && form.get('email')?.invalid ? 'input_label_invalid' : 'input_label'">
+                       Email
+                </label>
+                <input class="input" 
+                       [ngClass]="{input_invalid: form.get('email')?.touched && form.get('email')?.invalid}"
+                       type="email" 
+                       formControlName="email">
             </div>
 
-            <div>
-                <label>Password</label>
-                <input class="input" type="password" formControlName="password">
+            <div class="form_content_inputs__control">
+                <label class="input_label"
+                       [ngClass]="form.get('password')?.touched && form.get('password')?.invalid ? 'input_label_invalid' : 'input_label'">
+                       Password
+                </label>
+                <input class="input" 
+                       [ngClass]="{input_invalid: form.get('password')?.touched && form.get('password')?.invalid}"
+                       type="password" 
+                       formControlName="password">
             </div>
 
-            <div>
-
-            </div>
+            <div></div>
         </div>
 
-        <button class="btn btn-primary btn-L sign-in-form_btn"
+        <button class="btn btn-primary btn-L form_btn"
                 type="submit"
                 [disabled]="form.invalid">
                 Sign In

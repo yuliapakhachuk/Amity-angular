@@ -1,12 +1,12 @@
+@import '/src/styles/components/typography';
+
 .input {
-    display: flex;
-    width: 358px;
     padding: 13px 16px;
-    align-items: flex-start;
-    gap: 10px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid var(--light-300-color);
+    box-sizing: border-box;
+    @include body-regular(var(--dark-color));
 
     &:focus {
         border-color: var(--secondary-200-color);
@@ -18,5 +18,19 @@
 
     &_valid {
         border-color: var(--success-300-color);
+    }
+
+    &_label {
+        @include body-details-regular(var(--body-text-color));
+        margin-bottom: 8px;
+        display:flex;
+        flex-direction:column;
+
+        &_invalid {
+            @include body-details-regular(var(--error-300-color));
+            margin-bottom: 8px;
+            display:flex;
+            flex-direction:column;
+        }
     }
 }
