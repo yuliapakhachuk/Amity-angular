@@ -1,15 +1,40 @@
-<div class="user-avatar">
-    <div class="user-avatar_image-picture" 
-    [ngClass]="{emptyPhoto: isAvatarPhotoDownloaded}"
-
-    >
-        <img *ngIf="user.avatarUrl" class="" [src]="user.avatarUrl" alt="name">
-        <span *ngIf="!user.avatarUrl">{{ user.firstName[0] | uppercase }}</span>
+<div class="user-avatar" [ngClass]="{ fullInformation: showMore }">
+    <div class="user-avatar_short-info" [ngClass]="{ wrapper: showMore }">
+      
+    <div
+      class="user-avatar_image-picture"
+      [ngClass]="{ emptyPhoto: isAvatarPhotoDownloaded }"
+      >
+      <img
+        *ngIf="user.avatarUrl"
+        class="user-avatar_image-picture__photo"
+        [src]="user.avatarUrl"
+        alt="name"
+      />
+      <span *ngIf="!user.avatarUrl">{{ user.firstName[0] | uppercase }}</span>
     </div>
     <p class="user-avatar_name">
-        {{ user.firstName + " " + user.lastName}}
-        <br>
-        <span class="user-avatar_role">{{ user.role }}</span>
+      {{ user.firstName + " " + user.lastName }}
+      <br />
+      <span class="user-avatar_role">{{ user.role }}</span>
     </p>
-</div>
+    <span
+      class="user-avatar_show-more-btn"
+      [ngClass]="{ closeBtn: showMore }"
+      (click)="toogleShowMore()"
+    ></span>
+    </div>
 
+    <div *ngIf="showMore" class="user-avatar_additional-info">
+        <button
+        class="user-avatar_additional-info__profile-btn btn btn-S btn-outline"
+        >
+            View Profile
+        </button>
+        <div class="user-avatar_additional-info__email-wrapper">
+            Email address
+            <p class="user-avatar_additional-info__email">{{ user.email }}</p>
+        </div>
+        <button class="user-avatar_additional-info__signout-btn btn btn-link">Sign Out</button>
+    </div>
+</div>
