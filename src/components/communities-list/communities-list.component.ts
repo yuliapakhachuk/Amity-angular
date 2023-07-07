@@ -8,4 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CommunitiesListComponent implements OnInit {
   constructor() {}
   ngOnInit(): void {}
+  
+  createNewCommunity(): void {
+    console.log("new community created!");
+  }
 }

@@ -9,7 +9,7 @@
 
     margin: 0 auto;
 }
-
+//common table styles
 .table {
     width: 100%;
     
@@ -26,13 +26,15 @@
         margin: 0;
         padding: 16px;
         @include body-details-medium(var(--dark-color));
+        text-align: left;
     }
     tbody {
         tr { 
             &:hover, &:focus {
                 background-color: var(--light-100-color);
             }  
-            
+
+            // style for pressed table-row
             &.pressed {
                 background-color: var(--primary-10-color);
             }
@@ -42,6 +44,23 @@
                 border-bottom: 1px solid #e3dcdc;
                 @include body-regular(var(--dark-color))
             }
+        }
+    }
+    tfoot {
+        td {
+            padding: 8px 16px 0;
+            text-align: end ;
+        }
+    }
+}
+// style for doubled table data:
+.doubled-td {
+    p {
+        &:first-child {
+            @include body-medium(#000000);
+        }
+        &:last-child {
+            @include body-details-regular(#1B1B1B);
         }
     }
 }

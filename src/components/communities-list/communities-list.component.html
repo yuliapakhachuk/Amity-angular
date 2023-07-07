@@ -1,18 +1,31 @@
 <ng-container>
-    <div class="container">
+    <div class="container communities">
+        <div class="communities_tools">
+
+            <h1>List of Communities</h1>
+            <button class="btn btn-S btn-primary community-create__btn"
+            (click)="createNewCommunity()"> 
+                <span></span> Create community 
+            </button>
+            <div class="communities_tools__search">
+                <button class="btn btn-secondaty btn-S">Report</button>
+                <input type="text">
+            </div>
+        </div>
         <table class="table">
             <thead >
                 <tr>
-                    <th>Community name & address</th>
-                    <th>State</th>
-                    <th>Supervisor</th>
+                    <th>Community name & address <span class="arrow"></span></th>
+                    <th>State <span class="arrow"></span></th>
+                    <th>Supervisor <span class="arrow"></span></th>
                     <th>Contact number</th>
                     <th>Safety lock status</th>
                 </tr>
             </thead>
             <tbody class="table__body">
-                <tr>
-                    <td>
+                <!-- //expects an array to view in loop for each <tr> -->
+                <tr >
+                    <td class="doubled-td">
                         <p>Gambrill Gardens</p>
                         <p>NJ, Camden, 1605 Whiteman Street  45884</p>
                     </td>
@@ -62,11 +75,11 @@
                     <td>Safety Off</td>
                     <td><span class="table_menu__btn"></span></td>
                 </tr>
-
             </tbody>
             <tfoot>
-                <tr >
-                    <td class="tbl__footer">
+                <tr>
+                    <td colspan="6" >
+                            pagination component
                     </td>
                 </tr>
             </tfoot>
