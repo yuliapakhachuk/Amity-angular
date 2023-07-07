@@ -1,4 +1,6 @@
 //holds all content in container and center it om the screen
+@import "./typography";
+
 .container {
     max-width: 1280px;
     width: 100%;
@@ -6,4 +8,59 @@
     padding-right: 12px;
 
     margin: 0 auto;
+}
+//common table styles
+.table {
+    width: 100%;
+    
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    border-radius: 8px;
+    border: 1px solid #ECECEC;
+    border-spacing: 0px;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.10);
+    
+    th {
+        margin: 0;
+        padding: 16px;
+        @include body-details-medium(var(--dark-color));
+        text-align: left;
+    }
+    tbody {
+        tr { 
+            &:hover, &:focus {
+                background-color: var(--light-100-color);
+            }  
+
+            // style for pressed table-row
+            &.pressed {
+                background-color: var(--primary-10-color);
+            }
+
+            td {
+                padding: 10px 16px;
+                border-bottom: 1px solid #e3dcdc;
+                @include body-regular(var(--dark-color))
+            }
+        }
+    }
+    tfoot {
+        td {
+            padding: 8px 16px 0;
+            text-align: end ;
+        }
+    }
+}
+// style for doubled table data:
+.doubled-td {
+    p {
+        &:first-child {
+            @include body-medium(#000000);
+        }
+        &:last-child {
+            @include body-details-regular(#1B1B1B);
+        }
+    }
 }
