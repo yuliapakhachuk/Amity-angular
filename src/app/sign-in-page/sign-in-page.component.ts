@@ -8,6 +8,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class SignInPageComponent {
   form!: FormGroup;
+  isShowPassword!: boolean;
 
   ngOnInit() {
     this.form = new FormGroup({

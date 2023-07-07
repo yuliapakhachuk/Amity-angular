@@ -20,10 +20,13 @@
                        [ngClass]="form.get('password')?.touched && form.get('password')?.invalid ? 'input_label_invalid' : 'input_label'">
                        Password
                 </label>
-                <input class="input" 
-                       [ngClass]="{input_invalid: form.get('password')?.touched && form.get('password')?.invalid}"
-                       type="password" 
-                       formControlName="password">
+                <div class="input_password-container">
+                    <input class="input" 
+                        [ngClass]="{input_invalid: form.get('password')?.touched && form.get('password')?.invalid}"
+                        type="password" 
+                        formControlName="password">
+                    <app-show-password-eye [(isShowPassword)]="isShowPassword"></app-show-password-eye>
+                </div>
             </div>
 
             <div></div>

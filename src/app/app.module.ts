@@ -7,13 +7,15 @@ import { UserAvatarComponent } from './user-avatar/user-avatar.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShowPasswordEyeComponent } from './show-password-eye/show-password-eye.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserAvatarComponent,
     SignInPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    ShowPasswordEyeComponent
   ],
   imports: [
     BrowserModule,
