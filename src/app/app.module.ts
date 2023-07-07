@@ -14,13 +14,17 @@ import { CommunitiesListComponent } from '../components/communities-list/communi
   declarations: [
     AppComponent,
     UserAvatarComponent,
-    HeaderComponent
+    HeaderComponent,
+    CommunitiesListComponent,
+    SignInPageComponent,
+    ShowPasswordEyeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
