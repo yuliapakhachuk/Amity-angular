@@ -8,6 +8,7 @@ import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowPasswordEyeComponent } from './show-password-eye/show-password-eye.component';
+import { ErrorMessageComponent } from './error-message/error-message.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ShowPasswordEyeComponent } from './show-password-eye/show-password-eye.
     UserAvatarComponent,
     SignInPageComponent,
     HeaderComponent,
-    ShowPasswordEyeComponent
+    ShowPasswordEyeComponent,
+    ErrorMessageComponent
   ],
   imports: [
     BrowserModule,

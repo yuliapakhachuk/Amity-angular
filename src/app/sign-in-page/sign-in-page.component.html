@@ -2,6 +2,7 @@
     <h1 class="form_title">Sign In</h1>
 
     <div class="form_content">
+
         <div class="form_content_inputs">
 
             <div class="form_content_inputs__control">
@@ -13,6 +14,9 @@
                        [ngClass]="{input_invalid: form.get('email')?.touched && form.get('email')?.invalid}"
                        type="email" 
                        formControlName="email">
+                <app-error-message *ngIf="form.get('email')?.touched && form.get('email')?.invalid"
+                                   errorMessage="This Email does not appear to be valid.">
+                </app-error-message>   
             </div>
 
             <div class="form_content_inputs__control">
@@ -29,7 +33,14 @@
                 </div>
             </div>
 
-            <div></div>
+            <div class="form_content_inputs__settings">
+                <div class="form_content_inputs__settings__checkbox-container">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a class="form_content_inputs__settings__forgot">Forgot a password?</a>
+            </div>
+
         </div>
 
         <button class="btn btn-primary btn-L form_btn"
