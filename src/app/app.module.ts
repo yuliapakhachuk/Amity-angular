@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserAvatarComponent } from '../components/user-avatar/user-avatar.component';
-import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
-import { HeaderComponent } from '../components/header/header.component';
+import { UserAvatarComponent } from './components/user-avatar/user-avatar.component';
+import { SignInPageComponent } from './components/sign-in-page/sign-in-page.component';
+import { HeaderComponent } from './components/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ShowPasswordEyeComponent } from './show-password-eye/show-password-eye.component';
-import { CommunitiesListComponent } from '../components/communities-list/communities-list.component';
+import { ShowPasswordEyeComponent } from './components/show-password-eye/show-password-eye.component';
+import { ErrorMessageComponent } from './components/error-message/error-message.component';
+import { CommunitiesListComponent } from './components/communities-list/communities-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CommunitiesListComponent } from '../components/communities-list/communi
     HeaderComponent,
     CommunitiesListComponent,
     SignInPageComponent,
-    ShowPasswordEyeComponent
+    ShowPasswordEyeComponent,
+    ErrorMessageComponent
   ],
   imports: [
     BrowserModule,

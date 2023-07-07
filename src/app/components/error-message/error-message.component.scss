@@ -1,0 +1,18 @@
+@import '/src/styles/components/typography';
+
+.error-message {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    @include body-details-regular(var(--error-300-color));
+
+    &::before{
+        content: "\e901";
+        font-family: 'icomoon';
+        font-size: 20px;
+        margin-right: 8px;
+        vertical-align: middle;
+        color: var(--error-300-color);
+    }
+    
+}
