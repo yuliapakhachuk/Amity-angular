@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowPasswordEyeComponent } from './components/show-password-eye/show-password-eye.component';
 import { ErrorMessageComponent } from './components/error-message/error-message.component';
 import { CommunitiesListComponent } from './components/communities-list/communities-list.component';
+import { LoginMainPageComponent } from './components/login-main-page/login-main-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CommunitiesListComponent } from './components/communities-list/communit
     CommunitiesListComponent,
     SignInPageComponent,
     ShowPasswordEyeComponent,
-    ErrorMessageComponent
+    ErrorMessageComponent,
+    LoginMainPageComponent
   ],
   imports: [
     BrowserModule,
