@@ -54,7 +54,7 @@
     }
 }
 // style for doubled table data:
-.doubled-td {
+.td-doubled {
     p {
         &:first-child {
             @include body-medium(#000000);
@@ -64,3 +64,4 @@
         }
     }
 }
+

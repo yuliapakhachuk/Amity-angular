@@ -1,0 +1,97 @@
+<div class="container members">
+    <div class="members_tools">
+
+        <h1>List of Members</h1>
+        <button class="btn btn-S btn-primary member-create__btn"> 
+            <span></span> Add Member 
+        </button>
+        <div class="members_tools__search">
+            <button class="btn btn-secondaty btn-S">Report</button>
+            <input type="text" class="input">
+        </div>
+    </div>
+    <table class="table">
+        <thead >
+            <tr>
+                <th>Name <span class="arrow"></span></th>
+                <th>Role 
+                    <!-- filter component -->
+                </th>
+                <th>Email <span class="arrow"></span></th>
+                <th>Phone number</th>
+                <th># Communities (Buildings)</th>
+            </tr>
+        </thead>
+        <tbody class="table__body">
+            <!-- //expects an array to view in loop for each <tr> -->
+            <tr appRowIsPressed>
+                <td >
+                    <div
+                        class="user-avatar_image-picture"
+                        [ngClass]="{ emptyPhoto: isAvatarPhotoDownloaded }"
+                        >
+                        <img
+                        *ngIf="user.avatarUrl"
+                        class="user-avatar_image-picture__photo"
+                        [src]="user.avatarUrl"
+                        alt="name"
+                        />
+                        <span *ngIf="!user.avatarUrl">{{ user.firstName[0] | uppercase }}</span>
+                    </div>
+                    Boris Johnson
+                </td>
+                <td>
+                    Illinois  
+                </td>
+                <td>
+                    Allison Septimus
+                </td>
+                <td>
+                    245-567-3498
+                </td>
+                <td>Safety Off</td>
+                <td><span class="table_menu__btn"></span></td>
+            </tr>
+            <tr appRowIsPressed>
+                <td >
+                    Gambrill Gardens
+                </td>
+                <td>
+                    Illinois  
+                </td>
+                <td>
+                    Allison Septimus
+                </td>
+                <td>
+                    245-567-3498
+                </td>
+                <td>Safety Off</td>
+                <td><span class="table_menu__btn"></span></td>
+            </tr>
+            <tr appRowIsPressed>
+                <td >
+                    Gambrill Gardens
+                </td>
+                <td>
+                    Illinois  
+                </td>
+                <td>
+                    Allison Septimus
+                </td>
+                <td>
+                    245-567-3498
+                </td>
+                <td>Safety Off</td>
+                <td><span class="table_menu__btn"></span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" >
+                        pagination component
+                </td>
+            </tr>
+        </tfoot>
+    </table>    
+</div>
+

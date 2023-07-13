@@ -1,7 +1,6 @@
 @import '/src/styles/components/typography';
 
-// .container{
-// }
+
 .communities{
     padding-top: 32px;
     &_tools {
@@ -25,7 +24,6 @@ h1 {
     margin-right: 20px;
 }
 .community-create__btn {
-
     span {
         &::before {
             content: "\e902";
@@ -55,6 +53,5 @@ thead {
     display: block;
     font-size: 1rem;
     font-family: icomoon;
-
 }
 
