@@ -8,4 +8,14 @@
         align-items: center;
         width: 65%;
     }
+
+    &_img {
+        height: 100vh;
+    }
+
+    &_logo {
+        position: absolute;
+        top: 20px;
+        left: 82px;
+    }
 }

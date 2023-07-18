@@ -11,6 +11,7 @@ import { ShowPasswordEyeComponent } from './components/show-password-eye/show-pa
 import { ErrorMessageComponent } from './components/error-message/error-message.component';
 import { CommunitiesListComponent } from './components/communities-list/communities-list.component';
 import { LoginMainPageComponent } from './components/login-main-page/login-main-page.component';
+import { AmityLogoComponent } from './components/amity-logo/amity-logo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LoginMainPageComponent } from './components/login-main-page/login-main-
     SignInPageComponent,
     ShowPasswordEyeComponent,
     ErrorMessageComponent,
-    LoginMainPageComponent
+    LoginMainPageComponent,
+    AmityLogoComponent
   ],
   imports: [
     BrowserModule,
