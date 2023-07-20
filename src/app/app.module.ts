@@ -13,6 +13,7 @@ import { CommunitiesListComponent } from './components/communities-list/communit
 import { MembersListComponent } from './components/members-list/members-list.component';
 import { RowIsPressedDirective } from './sharing/directives/row-is-pressed.directive';
 import { LoginMainPageComponent } from './components/login-main-page/login-main-page.component';
+import { AmityLogoComponent } from './components/amity-logo/amity-logo.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LoginMainPageComponent } from './components/login-main-page/login-main-
     ErrorMessageComponent,
     LoginMainPageComponent,
     MembersListComponent,
-    RowIsPressedDirective
+    RowIsPressedDirective,
+    AmityLogoComponent
   ],
   imports: [
     BrowserModule,

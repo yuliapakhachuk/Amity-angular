@@ -35,7 +35,12 @@
 
             <div class="form_content_inputs__settings">
                 <div class="form_content_inputs__settings__checkbox-container">
-                    <input type="checkbox" id="remember">
+
+                    <div class="checkbox-container">
+                        <input class="checkbox" type="checkbox" formControlName="rememberUser">
+                        <div class="checkmark"></div>
+                    </div>
+
                     <label for="remember">Remember me</label>
                 </div>
                 <a class="form_content_inputs__settings__forgot">Forgot a password?</a>

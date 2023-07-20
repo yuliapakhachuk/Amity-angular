@@ -56,6 +56,11 @@
                 &__forgot {
                     padding: 10px;
                     @include body-details-semibold(var(--primary-400-color));
+                    letter-spacing: 0.42px;
+
+                    &:hover {
+                        text-decoration-line: underline;
+                    }
                 }
             }
         }
@@ -65,4 +70,3 @@
         width: 100%
     }
 }
-

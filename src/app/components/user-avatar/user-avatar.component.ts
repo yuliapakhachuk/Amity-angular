@@ -8,9 +8,10 @@ import { User } from '../../../models/user';
 })
 export class UserAvatarComponent implements OnInit{
   user: User = {
+    id: 1,
     firstName: "Ayeni",
     lastName: "Olohije",
-    role: "Amity Administrator",
+    role: "administrator",
     email: "test@gmail.com",
     phone: "+1 999 399 299",
     avatarUrl: ""
